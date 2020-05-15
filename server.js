@@ -5,11 +5,11 @@ const app = express();
 // Initiate server
 const server = http.createServer(app);
 
-// Ensure https://
-if(process.env.NODE_ENV === 'production' && process.env.SSL_NO_REDIRECT !== 'true') {
-  const sslRedirect = require('heroku-ssl-redirect');
-  app.use(sslRedirect());
-}
+// // Ensure https://
+// if(process.env.NODE_ENV === 'production' && process.env.SSL_NO_REDIRECT !== 'true') {
+//   const sslRedirect = require('heroku-ssl-redirect');
+//   app.use(sslRedirect());
+// }
 
 // Serve assets
 app.use('/', express.static(__dirname + '/build'));
