@@ -12,7 +12,7 @@ body {
   background-image: url('./assets/cold-bg.jpg');
   background-size: cover;
   background-position: bottom;
-  transition: 4 ease;
+  transition: 4s ease;
 }
 
 .app.warm {
@@ -26,6 +26,7 @@ main {
 }
 
 .search-box {
+  margin-top: 20px;
   width: 100%;
   margin: 0 0 75px;
 }
