@@ -32,7 +32,7 @@ function App() {
     let month = months[d.getMonth()];
     let year = d.getFullYear();
 
-    return `${day} ${date} ${month} ${year}`
+    return ` ${month} ${day} ${date} ${year}`
   }
 
   return (
@@ -42,7 +42,8 @@ function App() {
           <input
             type="text"
             className="search-bar"
-            placeholder="Search..."
+            placeholder="Search... city"
+            button="button"
             onChange={e => setQuery(e.target.value)}
             value={query}
             onKeyPress={search}
