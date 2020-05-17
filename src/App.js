@@ -32,7 +32,7 @@ function App() {
     let month = months[d.getMonth()];
     let year = d.getFullYear();
 
-    return ` ${month} ${day} ${date} ${year}`
+    return `${day} ${month} ${date}, ${year}`
   }
 
   return (
@@ -43,7 +43,7 @@ function App() {
             type="text"
             className="search-bar"
             placeholder="Search... city"
-            button="button"
+
             onChange={e => setQuery(e.target.value)}
             value={query}
             onKeyPress={search}
@@ -58,6 +58,9 @@ function App() {
           <div className="weather-box">
             <div className="temp">
               {Math.round(weather.main.temp)}°c
+            </div>
+            <div className="feels-like">
+              {Math.round(weather.main.feels_like)}
             </div>
             <div className="weather">{weather.weather[0].main}</div>
           </div>
