@@ -63,16 +63,19 @@ function App() {
               <div className="feels-like">Feels Like:
                 <div>{Math.round(weather.main.feels_like)}°c</div>
               </div>
+                <hr/>
               <div className="feels-like">Temp min:
                 <div>{Math.round(weather.main.temp_min)}°c</div>
               </div>
+                <hr/>
               <div className="feels-like">Temp max:
                 <div>{Math.round(weather.main.temp_max)}°c</div>
               </div>
+              <hr/>
               <div className="feels-like">Humidity:
                 <div>{Math.round(weather.main.humidity)}%</div>
               </div>
-              
+
           </div>
         </div>
         ) : ('')}
